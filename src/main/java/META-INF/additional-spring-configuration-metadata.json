@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "superface.blog.name",
+    "type": "java.lang.String",
+    "description": "A description for 'superface.blog.name'"
+  },
+  {
+    "name": "superface.blog.title",
+    "type": "java.lang.String",
+    "description": "A description for 'superface.blog.name'"
+  },
+  {
+    "name": "superface.blog.wholeTitle",
+    "type": "java.lang.String",
+    "description": "A description for 'superface.blog.wholeTitle'"
+  }
+]}
