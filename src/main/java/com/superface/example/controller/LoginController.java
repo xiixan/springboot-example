@@ -1,9 +1,7 @@
 package com.superface.example.controller;
 
-import com.superface.example.entity.User;
-import com.superface.example.util.MD5Utils;
-import com.superface.example.web.Response;
-
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -18,11 +16,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.superface.example.entity.User;
+import com.superface.example.util.MD5Utils;
+import com.superface.example.web.Response;
+
 /**
  * LoginController
  */
 @Controller
 public class LoginController {
+	
+	private final static Log LOGGER = LogFactory.getLog(LoginController.class);
 
     @GetMapping("/login")
     public String login() {
